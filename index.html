@@ -8,13 +8,13 @@
     <title>Input Output</title>
   </head>
   <body>
-    
+   
     <div class="container">
 
       <!-- Part 1 -->
       <div class="section">
         <h1>What's Your Favorite Color?</h1>
-        
+       
         <legend>Pick a color!</legend>
         <form id="fav_color" action="#">
           <input type="radio" id="blue" name="fav_color" value="blue">
@@ -53,28 +53,29 @@
             <img id="antarctica" src="img/ar.jpg" alt="Antarctica">
           </div>
         </div>
-        
+       
         <div id="sr-continent-alert">YOUR CONTINENT OUTPUT HERE</div>
       </div>
 
       <!-- Part 4 -->
-      <div class="section">
-        <h1>Change the Background Color</h1>
-        <form id="back_color" action="#">
-          <legend class="hidden">Pick a color!</legend>
-          <input type="color" id="color" name="background_color" value="#FFFEEE">
-          <div id="robot-validation">
-            <input type="checkbox" id="human" name="is_human">
-            <label for="human">I'm not a Robot <p id="red">*</p></label>
-          </div>
-          <input type="submit" id="submit" value="Change Background">
-        </form>
-      </div>
-      
+      <h1>Change the Background Color</h1>
+      <form id="back_color" action="#">
+        <legend class="hidden">Pick a color!</legend>
+        <input type="color" id="color" name="background_color" value="#FFFEEE">
+        <div id="robot-validation">
+          <input type="checkbox" id="human" name="is_human">
+          <label for="human">I'm not a Robot <p id="red">*</p></label>
+        </div>
+        <input type="submit" id="submit" value="Change Background">
+      </form>
+      <div id="sr-output" aria-live="polite" aria-atomic="true"></div> <!-- Accessible output div -->
     </div>
-    
+   
+ 
+   
 
     <script src="utils.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
+
